@@ -1,0 +1,178 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Nunito Sans', sans-serif;
+    gap: 20px;
+}
+
+body {
+    background-color: #C7BCAB;
+    color: #333;
+    margin: 0;
+    padding: 10px;
+}
+
+#contact, details, #company {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#contact {
+   border: 1px solid #B7825F;
+   border-radius: 10px;
+   width: 80%;
+   max-width: 600px;
+   gap: 5px;
+}
+
+#details, #company {
+    width: 80%;
+    max-width: 600px;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+#profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+#pfp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 80%;
+    max-width: 480px;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 80%;
+    max-width: 480px;
+}
+
+#company h1 {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+}
+
+#company h2 {
+    font-size: 0.8rem;
+}
+
+hr {
+    height: 1px;
+    width: 80%;
+    background-color: #B7825F; 
+    border: none;
+}
+
+@media (min-width: 600px) {
+    #contact, details, #company {
+        width: 40%;
+    }
+
+    #pfp {
+        width: 40%;
+    }
+
+    #wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        width: 80%;
+    }
+
+    hr {
+        display: none;
+    }
+
+    #pfp, #details, #company {
+        flex: 1;
+        max-width: 300px;
+    }
+
+    #company h1 {
+        font-size: 1.1rem; 
+        margin-bottom: 6px; 
+    }
+
+    #company h2 {
+        font-size: 0.9rem; 
+        margin-bottom: 4px; 
+    }
+}
+
+@media (min-width: 1024px) {
+    #contact {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        min-width: 700px;
+        padding: 30px;
+        gap: 20px;
+    }
+
+    #contact, details, #company {
+        width: 30%;
+    }
+
+    #pfp {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 300px;
+        flex-shrink: 0; 
+
+    }
+
+    #profile-pic {
+        min-width: 300px;
+        height: auto; 
+        border-radius: 50%;
+    }
+
+
+    #wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 800px;
+        gap: 20px;
+    }
+
+    hr {
+        display: block;
+    }    
+}
